@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C0B199465F49289D87DB972 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06970F8AA01C93002CE9B282 /* Pods.framework */; };
+		160DF32921A50B0E97701891 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 763EDE3BB02323017FBF220A /* libPods.a */; };
 		B63BA1181CA9425E00A6777E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1171CA9425E00A6777E /* AppDelegate.swift */; };
 		B63BA11A1CA9425E00A6777E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1191CA9425E00A6777E /* ViewController.swift */; };
 		B63BA11D1CA9425E00A6777E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA11B1CA9425E00A6777E /* Main.storyboard */; };
@@ -15,6 +15,11 @@
 		B63BA1221CA9425E00A6777E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1201CA9425E00A6777E /* LaunchScreen.storyboard */; };
 		B63BA12D1CA9425E00A6777E /* LiaoRenShengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA12C1CA9425E00A6777E /* LiaoRenShengTests.swift */; };
 		B63BA1381CA9425E00A6777E /* LiaoRenShengUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1371CA9425E00A6777E /* LiaoRenShengUITests.swift */; };
+		B63BA14D1CA9474E00A6777E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA14C1CA9474E00A6777E /* MainTabBarController.swift */; };
+		B63BA1531CA948CD00A6777E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1521CA948CD00A6777E /* Home.storyboard */; };
+		B63BA1551CA948DC00A6777E /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1541CA948DC00A6777E /* Collection.storyboard */; };
+		B63BA1571CA948EB00A6777E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1561CA948EB00A6777E /* Profile.storyboard */; };
+		B63BA1591CA948F700A6777E /* Voice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1581CA948F700A6777E /* Voice.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06970F8AA01C93002CE9B282 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BBCB8900A81E562B74DA38 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		763EDE3BB02323017FBF220A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9059CBFC6E7F8A3D7BE1FFC1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B63BA1141CA9425E00A6777E /* LiaoRenSheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiaoRenSheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63BA1171CA9425E00A6777E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,12 @@
 		B63BA1331CA9425E00A6777E /* LiaoRenShengUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiaoRenShengUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63BA1371CA9425E00A6777E /* LiaoRenShengUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiaoRenShengUITests.swift; sourceTree = "<group>"; };
 		B63BA1391CA9425E00A6777E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63BA14C1CA9474E00A6777E /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B63BA1521CA948CD00A6777E /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B63BA1541CA948DC00A6777E /* Collection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		B63BA1561CA948EB00A6777E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		B63BA1581CA948F700A6777E /* Voice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Voice.storyboard; sourceTree = "<group>"; };
+		B63BA15A1CA949C400A6777E /* LiaoRenSheng-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiaoRenSheng-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0B199465F49289D87DB972 /* Pods.framework in Frameworks */,
+				160DF32921A50B0E97701891 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,9 +124,11 @@
 		B63BA1161CA9425E00A6777E /* LiaoRenSheng */ = {
 			isa = PBXGroup;
 			children = (
+				B63BA1491CA9471C00A6777E /* UI */,
 				B63BA1171CA9425E00A6777E /* AppDelegate.swift */,
 				B63BA1191CA9425E00A6777E /* ViewController.swift */,
 				B63BA11B1CA9425E00A6777E /* Main.storyboard */,
+				B63BA15A1CA949C400A6777E /* LiaoRenSheng-Bridging-Header.h */,
 				B63BA11E1CA9425E00A6777E /* Assets.xcassets */,
 				B63BA1201CA9425E00A6777E /* LaunchScreen.storyboard */,
 				B63BA1231CA9425E00A6777E /* Info.plist */,
@@ -141,10 +154,70 @@
 			path = LiaoRenShengUITests;
 			sourceTree = "<group>";
 		};
+		B63BA1491CA9471C00A6777E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA14A1CA9471C00A6777E /* Controller */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B63BA14A1CA9471C00A6777E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA14B1CA9471C00A6777E /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B63BA14B1CA9471C00A6777E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA14E1CA948B800A6777E /* Collection */,
+				B63BA14F1CA948B800A6777E /* Home */,
+				B63BA1501CA948B800A6777E /* Profile */,
+				B63BA1511CA948B800A6777E /* Voice */,
+				B63BA14C1CA9474E00A6777E /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B63BA14E1CA948B800A6777E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA1541CA948DC00A6777E /* Collection.storyboard */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		B63BA14F1CA948B800A6777E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA1521CA948CD00A6777E /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B63BA1501CA948B800A6777E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA1561CA948EB00A6777E /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B63BA1511CA948B800A6777E /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA1581CA948F700A6777E /* Voice.storyboard */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
 		EE39870158A1800CC7164BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06970F8AA01C93002CE9B282 /* Pods.framework */,
+				763EDE3BB02323017FBF220A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -256,9 +329,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BA1571CA948EB00A6777E /* Profile.storyboard in Resources */,
 				B63BA1221CA9425E00A6777E /* LaunchScreen.storyboard in Resources */,
+				B63BA1591CA948F700A6777E /* Voice.storyboard in Resources */,
 				B63BA11F1CA9425E00A6777E /* Assets.xcassets in Resources */,
 				B63BA11D1CA9425E00A6777E /* Main.storyboard in Resources */,
+				B63BA1531CA948CD00A6777E /* Home.storyboard in Resources */,
+				B63BA1551CA948DC00A6777E /* Collection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +410,7 @@
 			files = (
 				B63BA11A1CA9425E00A6777E /* ViewController.swift in Sources */,
 				B63BA1181CA9425E00A6777E /* AppDelegate.swift in Sources */,
+				B63BA14D1CA9474E00A6777E /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +557,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MeMo.LiaoRenSheng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiaoRenSheng/LiaoRenSheng-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -491,6 +570,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MeMo.LiaoRenSheng;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiaoRenSheng/LiaoRenSheng-Bridging-Header.h";
 			};
 			name = Release;
 		};
