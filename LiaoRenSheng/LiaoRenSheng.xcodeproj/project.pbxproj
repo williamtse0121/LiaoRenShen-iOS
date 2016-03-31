@@ -20,6 +20,10 @@
 		B63BA1551CA948DC00A6777E /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1541CA948DC00A6777E /* Collection.storyboard */; };
 		B63BA1571CA948EB00A6777E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1561CA948EB00A6777E /* Profile.storyboard */; };
 		B63BA1591CA948F700A6777E /* Voice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA1581CA948F700A6777E /* Voice.storyboard */; };
+		B63BA1971CA9DB0E00A6777E /* ClientRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1961CA9DB0E00A6777E /* ClientRepository.swift */; };
+		B63BA1991CA9DB7A00A6777E /* BackendUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1981CA9DB7A00A6777E /* BackendUtilities.swift */; };
+		B656A5681CAB19C100B9A64D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A5671CAB19C100B9A64D /* HomeVC.swift */; };
+		B656A56A1CAB25D100B9A64D /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A5691CAB25D100B9A64D /* BookRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		B63BA1561CA948EB00A6777E /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B63BA1581CA948F700A6777E /* Voice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Voice.storyboard; sourceTree = "<group>"; };
 		B63BA15A1CA949C400A6777E /* LiaoRenSheng-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiaoRenSheng-Bridging-Header.h"; sourceTree = "<group>"; };
+		B63BA1961CA9DB0E00A6777E /* ClientRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientRepository.swift; sourceTree = "<group>"; };
+		B63BA1981CA9DB7A00A6777E /* BackendUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendUtilities.swift; sourceTree = "<group>"; };
+		B656A5671CAB19C100B9A64D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		B656A5691CAB25D100B9A64D /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,7 @@
 		B63BA1161CA9425E00A6777E /* LiaoRenSheng */ = {
 			isa = PBXGroup;
 			children = (
+				B63BA1951CA9C7B100A6777E /* Model */,
 				B63BA1491CA9471C00A6777E /* UI */,
 				B63BA1171CA9425E00A6777E /* AppDelegate.swift */,
 				B63BA1191CA9425E00A6777E /* ViewController.swift */,
@@ -194,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B63BA1521CA948CD00A6777E /* Home.storyboard */,
+				B656A5671CAB19C100B9A64D /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -212,6 +222,16 @@
 				B63BA1581CA948F700A6777E /* Voice.storyboard */,
 			);
 			path = Voice;
+			sourceTree = "<group>";
+		};
+		B63BA1951CA9C7B100A6777E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B63BA1961CA9DB0E00A6777E /* ClientRepository.swift */,
+				B63BA1981CA9DB7A00A6777E /* BackendUtilities.swift */,
+				B656A5691CAB25D100B9A64D /* BookRepository.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EE39870158A1800CC7164BCE /* Frameworks */ = {
@@ -408,8 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BA1971CA9DB0E00A6777E /* ClientRepository.swift in Sources */,
+				B63BA1991CA9DB7A00A6777E /* BackendUtilities.swift in Sources */,
 				B63BA11A1CA9425E00A6777E /* ViewController.swift in Sources */,
+				B656A5681CAB19C100B9A64D /* HomeVC.swift in Sources */,
 				B63BA1181CA9425E00A6777E /* AppDelegate.swift in Sources */,
+				B656A56A1CAB25D100B9A64D /* BookRepository.swift in Sources */,
 				B63BA14D1CA9474E00A6777E /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

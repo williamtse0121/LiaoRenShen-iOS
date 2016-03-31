@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="Jdl-5Y-nsJ">
             <objects>
-                <viewController id="z7D-Ph-m2s" sceneMemberID="viewController">
+                <viewController id="z7D-Ph-m2s" customClass="HomeVC" customModule="LiaoRenSheng" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eN7-D7-gJX"/>
                         <viewControllerLayoutGuide type="bottom" id="h6Z-Ll-C0T"/>
@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="L31-YL-qoI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-7Y-Xsk">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="createBook:" destination="z7D-Ph-m2s" eventType="touchUpInside" id="9fD-fN-C0k"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pj2-7Y-Xsk" firstAttribute="centerX" secondItem="L31-YL-qoI" secondAttribute="centerX" id="6va-Qr-uV1"/>
+                            <constraint firstItem="Pj2-7Y-Xsk" firstAttribute="centerY" secondItem="L31-YL-qoI" secondAttribute="centerY" id="tzu-uB-wh1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PoV-Xa-kSu" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -18,3 +18,5 @@
 #import "CYLTabBarController.h"
 #import "CYLTabBar.h"
 #import "CYLPlusButton.h"
+
+#import <LoopBack/LoopBack.h>

@@ -8,12 +8,15 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var adapter:LBRESTAdapter = LBRESTAdapter(URL: NSURL(string: "http://0.0.0.0:3000/api/"))
 
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
