@@ -24,6 +24,7 @@
 		B63BA1991CA9DB7A00A6777E /* BackendUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1981CA9DB7A00A6777E /* BackendUtilities.swift */; };
 		B656A5681CAB19C100B9A64D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A5671CAB19C100B9A64D /* HomeVC.swift */; };
 		B656A56A1CAB25D100B9A64D /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A5691CAB25D100B9A64D /* BookRepository.swift */; };
+		B66FC3621CB136A80045F4EE /* AddNewVoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B63BA1981CA9DB7A00A6777E /* BackendUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendUtilities.swift; sourceTree = "<group>"; };
 		B656A5671CAB19C100B9A64D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B656A5691CAB25D100B9A64D /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNewVoice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 		B63BA14A1CA9471C00A6777E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B66FC35E1CB135AC0045F4EE /* AddNew */,
 				B63BA14B1CA9471C00A6777E /* Main */,
 			);
 			path = Controller;
@@ -232,6 +235,14 @@
 				B656A5691CAB25D100B9A64D /* BookRepository.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B66FC35E1CB135AC0045F4EE /* AddNew */ = {
+			isa = PBXGroup;
+			children = (
+				B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */,
+			);
+			path = AddNew;
 			sourceTree = "<group>";
 		};
 		EE39870158A1800CC7164BCE /* Frameworks */ = {
@@ -355,6 +366,7 @@
 				B63BA11F1CA9425E00A6777E /* Assets.xcassets in Resources */,
 				B63BA11D1CA9425E00A6777E /* Main.storyboard in Resources */,
 				B63BA1531CA948CD00A6777E /* Home.storyboard in Resources */,
+				B66FC3621CB136A80045F4EE /* AddNewVoice.storyboard in Resources */,
 				B63BA1551CA948DC00A6777E /* Collection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
