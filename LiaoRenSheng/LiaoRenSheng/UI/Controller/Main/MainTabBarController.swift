@@ -58,8 +58,8 @@ class MainTabBarController: CYLTabBarController {
     
     func buttonAction(sender:UIButton!)
     {
-        let vc = UIStoryboard(name: "AddNewVoice", bundle: nil).instantiateInitialViewController()
-        self.presentViewController(vc!, animated: true, completion: nil)
+        let vc = UIStoryboard(name: "AddNewVoice", bundle: nil).instantiateInitialViewController() as! addVoiceVC
+        self.presentViewController(vc, animated: true, completion: nil)
         print("Button tapped")
     }
 

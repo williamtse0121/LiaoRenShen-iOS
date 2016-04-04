@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wNc-W3-ldg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wNc-W3-ldg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add VoiceVC-->
         <scene sceneID="tOu-PR-VQN">
             <objects>
-                <viewController id="wNc-W3-ldg" sceneMemberID="viewController">
+                <viewController id="wNc-W3-ldg" customClass="addVoiceVC" customModule="LiaoRenSheng" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bRf-1C-CvI"/>
                         <viewControllerLayoutGuide type="bottom" id="ehQ-GH-oCr"/>
@@ -16,8 +16,21 @@
                     <view key="view" contentMode="scaleToFill" id="fKl-EN-qV5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ix-2e-Dtk">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ix-2e-Dtk" firstAttribute="centerY" secondItem="fKl-EN-qV5" secondAttribute="centerY" id="ASS-Oh-SlD"/>
+                            <constraint firstItem="3ix-2e-Dtk" firstAttribute="centerX" secondItem="fKl-EN-qV5" secondAttribute="centerX" id="tGz-5z-7gI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordButton" destination="3ix-2e-Dtk" id="5ko-35-IcN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTP-AE-g9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
