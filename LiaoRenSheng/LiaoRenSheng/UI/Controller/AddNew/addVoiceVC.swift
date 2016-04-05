@@ -18,9 +18,11 @@ public enum SCSiriWaveformViewInputType{
 class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate {
 
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     
     ///title for recorded file that adds this title to the name of the file, (record_title_NSDate().m4a) - default is (record_NSDate().m4a)
     var soundFileTitle:String?
+
     
     ///recorder limit time - default is 30 secend (00:30).
     var recorderLimitTime:Double?
@@ -28,14 +30,14 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     //bool indentifing if its recording
     private var isRecording = false
     
-    //play btn for playing the audio recorded
-    private var playBtn:UIButton!
-    
     //the record audio file path
     private var soundFileURL:NSURL!
     
     //wave type if its record or player
     private var waveViewInputType:SCSiriWaveformViewInputType!
+    
+    //bool indentifing if its playing
+    private var isPlaying = false
     
     //recorder instansce
     private var recorder:AVAudioRecorder!
@@ -46,6 +48,9 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     //the file name wich will be passed to parent viewcontroller
     private var fileName:String!
     
+    //player instansce
+    private var player:AVAudioPlayer!
+    
     private func runMeterTimer(){
         
         meterTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateProgress", userInfo: nil, repeats: true)
@@ -54,12 +59,12 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        toolBarSetUp()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
-        toolBarSetUp()
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,17 +73,20 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     }
     
     private func toolBarSetUp(){
+        
         self.recordButton.addTarget(self, action: "recordAudioOnClick", forControlEvents: UIControlEvents.TouchDown)
         self.recordButton.addTarget(self, action: "recordAudioOnClickRealease", forControlEvents: UIControlEvents.TouchUpInside)
         self.recordButton.addTarget(self, action: "recordAudioOnClickRealease", forControlEvents: UIControlEvents.TouchDragOutside)
         self.recordButton.addTarget(self, action: "recordAudioOnClickRealease", forControlEvents: UIControlEvents.TouchDragExit)
+        
+        playButton.addTarget(self, action: "playRecord", forControlEvents: UIControlEvents.TouchUpInside)
     }
     
     func recordAudioOnClick(){
         print("Pressed")
         if !isRecording{
             isRecording = true
-            playBtn.enabled = false
+            playButton.enabled = false
             if soundFileURL != nil{
                 do{
                     try NSFileManager.defaultManager().removeItemAtPath(soundFileURL.path!)
@@ -93,12 +101,50 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
             do{
                 try AVAudioSession.sharedInstance().setActive(true)
                 recorder.record()
-                runMeterTimer()
+//                runMeterTimer()
             }catch let error as NSError{
                 print(error)
             }
         }
     }
+    
+    func recordAudioOnClickRealease(){
+        //------------------------------------------------------------------------//
+        print("play")
+        if isRecording{
+            isRecording = false
+            recorder.stop()
+            
+            playButton.enabled = true
+            waveViewInputType = nil
+            setUpPlayer()
+        }
+    }
+    
+    func playRecord(){
+        //------------------------------------------------------------------------//
+        if !isPlaying && player != nil{
+            isPlaying = true
+            
+            waveViewInputType = SCSiriWaveformViewInputType.Player
+            
+            player.play()
+        }
+    }
+    
+    private func setUpPlayer(){
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            player = try AVAudioPlayer(contentsOfURL: recorder.url)
+            player.delegate = self
+            player.meteringEnabled = true
+            player.prepareToPlay()
+        }catch let error as NSError{
+            print(error)
+        }
+    }
+
     
     private func getRecorderFileURLPath(){
         

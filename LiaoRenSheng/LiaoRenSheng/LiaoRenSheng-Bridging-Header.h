@@ -19,4 +19,8 @@
 #import "CYLTabBar.h"
 #import "CYLPlusButton.h"
 
+#import "SCSiriWaveformView.h"
+#import "CircleProgressView.h"
+
+
 #import <LoopBack/LoopBack.h>
