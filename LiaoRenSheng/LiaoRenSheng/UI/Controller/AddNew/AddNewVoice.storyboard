@@ -29,13 +29,43 @@
                                 </constraints>
                                 <state key="normal" title="play"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq1-Ae-hSk">
+                                <rect key="frame" x="20" y="534" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="CLW-BW-UUC"/>
+                                    <constraint firstAttribute="height" constant="46" id="PWu-ui-lpK"/>
+                                </constraints>
+                                <state key="normal" image="closeButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij6-uW-6Lc">
+                                <rect key="frame" x="534" y="534" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="8Yw-fX-2jS"/>
+                                    <constraint firstAttribute="width" constant="46" id="OXf-JS-aKU"/>
+                                </constraints>
+                                <state key="normal" image="paperPlane"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLE-hK-3C4">
+                                <rect key="frame" x="274" y="528" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="D5H-Wm-RGA"/>
+                                    <constraint firstAttribute="height" constant="52" id="ebA-8h-TWc"/>
+                                </constraints>
+                                <state key="normal" image="micButton"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="3ix-2e-Dtk" firstAttribute="centerY" secondItem="fKl-EN-qV5" secondAttribute="centerY" id="ASS-Oh-SlD"/>
+                            <constraint firstItem="ehQ-GH-oCr" firstAttribute="top" secondItem="Ij6-uW-6Lc" secondAttribute="bottom" constant="20" id="CiT-6q-IQy"/>
                             <constraint firstItem="ART-cJ-X8f" firstAttribute="top" secondItem="3ix-2e-Dtk" secondAttribute="bottom" constant="8" id="IrF-mi-Tiw"/>
+                            <constraint firstAttribute="trailing" secondItem="Ij6-uW-6Lc" secondAttribute="trailing" constant="20" id="TeE-Nk-qVW"/>
+                            <constraint firstItem="Vq1-Ae-hSk" firstAttribute="leading" secondItem="fKl-EN-qV5" secondAttribute="leading" constant="20" id="ZE0-CU-CQv"/>
                             <constraint firstItem="ART-cJ-X8f" firstAttribute="centerX" secondItem="fKl-EN-qV5" secondAttribute="centerX" id="epk-Ff-hyC"/>
+                            <constraint firstItem="ehQ-GH-oCr" firstAttribute="top" secondItem="pLE-hK-3C4" secondAttribute="bottom" constant="20" id="py2-hw-lSf"/>
                             <constraint firstItem="3ix-2e-Dtk" firstAttribute="centerX" secondItem="fKl-EN-qV5" secondAttribute="centerX" id="tGz-5z-7gI"/>
+                            <constraint firstItem="pLE-hK-3C4" firstAttribute="centerX" secondItem="fKl-EN-qV5" secondAttribute="centerX" id="utq-fP-y4m"/>
+                            <constraint firstItem="ehQ-GH-oCr" firstAttribute="top" secondItem="Vq1-Ae-hSk" secondAttribute="bottom" constant="20" id="zq3-hV-tnV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -48,4 +78,9 @@
             <point key="canvasLocation" x="591" y="335"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="closeButton" width="128" height="128"/>
+        <image name="micButton" width="128" height="128"/>
+        <image name="paperPlane" width="128" height="128"/>
+    </resources>
 </document>

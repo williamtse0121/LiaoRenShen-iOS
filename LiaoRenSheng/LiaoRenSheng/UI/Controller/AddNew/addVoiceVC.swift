@@ -22,7 +22,6 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     
     ///title for recorded file that adds this title to the name of the file, (record_title_NSDate().m4a) - default is (record_NSDate().m4a)
     var soundFileTitle:String?
-
     
     ///recorder limit time - default is 30 secend (00:30).
     var recorderLimitTime:Double?
@@ -52,11 +51,17 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     private var player:AVAudioPlayer!
     
     private func runMeterTimer(){
-        
         meterTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateProgress", userInfo: nil, repeats: true)
     }
-
     
+    func updateProgress(){
+        if isRecording{
+//            progerssCicle.elapsedTime = recorder.currentTime
+        }else if isPlaying{
+//            progerssCicle.elapsedTime = player.currentTime
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         toolBarSetUp()
