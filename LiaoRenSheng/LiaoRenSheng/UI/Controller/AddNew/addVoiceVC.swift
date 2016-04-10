@@ -19,36 +19,60 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
 
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var tagsScrollView: UIScrollView!
+    @IBOutlet weak var tagsScrollViewContent: UIView!
+    @IBOutlet weak var circleView: CircleProgressView!
+    var tagView: SKTagView?
+    @IBAction func closeButtonClicked(sender: UIButton) {
+        self.dismissViewControllerAnimated(true, completion: {});
+        
+    }
+    
+    @IBAction func sendButtonClicked(sender: UIButton) {
+        
+    }
     
     ///title for recorded file that adds this title to the name of the file, (record_title_NSDate().m4a) - default is (record_NSDate().m4a)
     var soundFileTitle:String?
-    
     ///recorder limit time - default is 30 secend (00:30).
     var recorderLimitTime:Double?
     
     //bool indentifing if its recording
     private var isRecording = false
-    
     //the record audio file path
     private var soundFileURL:NSURL!
-    
     //wave type if its record or player
     private var waveViewInputType:SCSiriWaveformViewInputType!
-    
     //bool indentifing if its playing
     private var isPlaying = false
-    
     //recorder instansce
     private var recorder:AVAudioRecorder!
-    
     //the looper for progressCicle
     private var meterTimer:NSTimer!
-    
     //the file name wich will be passed to parent viewcontroller
     private var fileName:String!
-    
     //player instansce
     private var player:AVAudioPlayer!
+    
+    
+    
+    // MARK: - Life circle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        toolBarSetUp()
+        setupTagView()
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.tagsScrollView.contentSize = tagView!.frame.size
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     private func runMeterTimer(){
         meterTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateProgress", userInfo: nil, repeats: true)
@@ -62,20 +86,50 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        toolBarSetUp()
-        // Do any additional setup after loading the view.
-    }
     
-    override func viewDidAppear(animated: Bool) {
+    
+    func setupTagView(){
+        self.tagView = SKTagView()
+        tagView!.backgroundColor = UIColor.whiteColor()
+        tagView!.padding = UIEdgeInsetsMake(12, 12, 12, 12)
+        tagView!.interitemSpacing = 15
+        tagView!.lineSpacing = 10
+        
+        weak var weakView: SKTagView? = tagView
+        tagView!.didTapTagAtIndex = {(index: UInt) -> Void in
+            weakView!.removeTagAtIndex(index)
+        }
+        self.tagsScrollView.addSubview(tagView!)
+        self.tagsScrollView.contentSize = tagView!.frame.size
+        
+        
+        tagView!.mas_makeConstraints({ (make:MASConstraintMaker!) -> Void in
+            let superView = self.tagsScrollViewContent!
+            make.top.equalTo()(superView.mas_top)
+            make.leading.equalTo()(superView.mas_leading)
+            make.trailing.equalTo()(superView.mas_trailing)
+        })
+        
+        
+        
+        //Add Tags
+        
+        let tags = ["Python", "Javascript", "Python", "Swift", "Go", "Objective-C", "C", "PHP" ,"Python", "Javascript", "Python", "Swift", "Go", "Objective-C", "C", "PHP","Python", "Javascript", "Python", "Swift", "Go", "Objective-C", "C", "PHP" ,"Python", "Javascript", "Python", "Swift", "Go", "Objective-C", "C", "PHP"]
+        for tagTest in tags{
+            let tag:SKTag = SKTag(text: tagTest)
+            tag.textColor = UIColor.whiteColor()
+            tag.fontSize = 15
+            //tag.font = [UIFont fontWithName:@"Courier" size:15];
+            //tag.enable = NO;
+            tag.padding = UIEdgeInsetsMake(13.5, 12.5, 13.5, 12.5)
+            tag.bgColor = UIColor.redColor()
+            tag.cornerRadius = 5
+            tagView!.addTag(tag)
+        }
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
     private func toolBarSetUp(){
         

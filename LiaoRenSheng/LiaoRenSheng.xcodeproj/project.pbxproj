@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		160DF32921A50B0E97701891 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 763EDE3BB02323017FBF220A /* libPods.a */; };
+		677458FCA7A72C235473BA3F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5880C6DCD9433B6B2364A1 /* libPods.a */; };
 		B60702121CB16A2600B16882 /* addVoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60702111CB16A2600B16882 /* addVoiceVC.swift */; };
-		B60702141CB4470300B16882 /* ISAudioRecorderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60702131CB4470300B16882 /* ISAudioRecorderViewDelegate.swift */; };
-		B60702161CB4476900B16882 /* ISAudioRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60702151CB4476900B16882 /* ISAudioRecorderViewController.swift */; };
-		B607021C1CB4485700B16882 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60702191CB4485700B16882 /* CircleProgressView.m */; };
-		B607021D1CB4485700B16882 /* CircleShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B607021B1CB4485700B16882 /* CircleShapeLayer.m */; };
+		B607021F1CB7096300B16882 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607021E1CB7096300B16882 /* CircleProgressView.swift */; };
 		B63BA1181CA9425E00A6777E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1171CA9425E00A6777E /* AppDelegate.swift */; };
 		B63BA11A1CA9425E00A6777E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BA1191CA9425E00A6777E /* ViewController.swift */; };
 		B63BA11D1CA9425E00A6777E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BA11B1CA9425E00A6777E /* Main.storyboard */; };
@@ -51,15 +48,9 @@
 
 /* Begin PBXFileReference section */
 		66BBCB8900A81E562B74DA38 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		763EDE3BB02323017FBF220A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9059CBFC6E7F8A3D7BE1FFC1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B60702111CB16A2600B16882 /* addVoiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addVoiceVC.swift; sourceTree = "<group>"; };
-		B60702131CB4470300B16882 /* ISAudioRecorderViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISAudioRecorderViewDelegate.swift; sourceTree = "<group>"; };
-		B60702151CB4476900B16882 /* ISAudioRecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISAudioRecorderViewController.swift; sourceTree = "<group>"; };
-		B60702181CB4485700B16882 /* CircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
-		B60702191CB4485700B16882 /* CircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
-		B607021A1CB4485700B16882 /* CircleShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleShapeLayer.h; sourceTree = "<group>"; };
-		B607021B1CB4485700B16882 /* CircleShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleShapeLayer.m; sourceTree = "<group>"; };
+		B607021E1CB7096300B16882 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		B63BA1141CA9425E00A6777E /* LiaoRenSheng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiaoRenSheng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63BA1171CA9425E00A6777E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B63BA1191CA9425E00A6777E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +75,7 @@
 		B656A5671CAB19C100B9A64D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B656A5691CAB25D100B9A64D /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNewVoice.storyboard; sourceTree = "<group>"; };
+		CE5880C6DCD9433B6B2364A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160DF32921A50B0E97701891 /* libPods.a in Frameworks */,
+				677458FCA7A72C235473BA3F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,12 +116,16 @@
 		B60702171CB4485700B16882 /* CircularProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				B60702181CB4485700B16882 /* CircleProgressView.h */,
-				B60702191CB4485700B16882 /* CircleProgressView.m */,
-				B607021A1CB4485700B16882 /* CircleShapeLayer.h */,
-				B607021B1CB4485700B16882 /* CircleShapeLayer.m */,
+				B607021E1CB7096300B16882 /* CircleProgressView.swift */,
 			);
 			path = CircularProgressView;
+			sourceTree = "<group>";
+		};
+		B60702201CBAA25500B16882 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		B63BA10B1CA9425E00A6777E = {
@@ -157,6 +153,7 @@
 		B63BA1161CA9425E00A6777E /* LiaoRenSheng */ = {
 			isa = PBXGroup;
 			children = (
+				B60702201CBAA25500B16882 /* lib */,
 				B63BA1951CA9C7B100A6777E /* Model */,
 				B63BA1491CA9471C00A6777E /* UI */,
 				B63BA1171CA9425E00A6777E /* AppDelegate.swift */,
@@ -266,8 +263,6 @@
 			children = (
 				B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */,
 				B60702111CB16A2600B16882 /* addVoiceVC.swift */,
-				B60702151CB4476900B16882 /* ISAudioRecorderViewController.swift */,
-				B60702131CB4470300B16882 /* ISAudioRecorderViewDelegate.swift */,
 			);
 			path = AddNew;
 			sourceTree = "<group>";
@@ -275,7 +270,7 @@
 		EE39870158A1800CC7164BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				763EDE3BB02323017FBF220A /* libPods.a */,
+				CE5880C6DCD9433B6B2364A1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -467,18 +462,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60702141CB4470300B16882 /* ISAudioRecorderViewDelegate.swift in Sources */,
 				B63BA1971CA9DB0E00A6777E /* ClientRepository.swift in Sources */,
 				B63BA1991CA9DB7A00A6777E /* BackendUtilities.swift in Sources */,
 				B63BA11A1CA9425E00A6777E /* ViewController.swift in Sources */,
+				B607021F1CB7096300B16882 /* CircleProgressView.swift in Sources */,
 				B60702121CB16A2600B16882 /* addVoiceVC.swift in Sources */,
-				B607021D1CB4485700B16882 /* CircleShapeLayer.m in Sources */,
-				B607021C1CB4485700B16882 /* CircleProgressView.m in Sources */,
 				B656A5681CAB19C100B9A64D /* HomeVC.swift in Sources */,
 				B63BA1181CA9425E00A6777E /* AppDelegate.swift in Sources */,
 				B656A56A1CAB25D100B9A64D /* BookRepository.swift in Sources */,
 				B63BA14D1CA9474E00A6777E /* MainTabBarController.swift in Sources */,
-				B60702161CB4476900B16882 /* ISAudioRecorderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

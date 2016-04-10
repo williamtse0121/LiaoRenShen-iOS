@@ -20,7 +20,8 @@
 #import "CYLPlusButton.h"
 
 #import "SCSiriWaveformView.h"
-#import "CircleProgressView.h"
-
+//#import "CircleProgressView.h"
+#import "SKTagView.h"
+#import <Masonry/Masonry.h>
 
 #import <LoopBack/LoopBack.h>
