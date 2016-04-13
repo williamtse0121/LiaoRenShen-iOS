@@ -90,7 +90,7 @@ class addVoiceVC: UIViewController,AVAudioRecorderDelegate,AVAudioPlayerDelegate
     
     func setupTagView(){
         self.tagView = SKTagView()
-        tagView!.backgroundColor = UIColor.whiteColor()
+        tagView!.backgroundColor = UIColor.clearColor()
         tagView!.padding = UIEdgeInsetsMake(12, 12, 12, 12)
         tagView!.interitemSpacing = 15
         tagView!.lineSpacing = 10

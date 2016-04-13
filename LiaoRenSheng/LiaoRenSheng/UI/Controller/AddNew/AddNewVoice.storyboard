@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wNc-W3-ldg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wNc-W3-ldg">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Add VoiceVC-->
@@ -67,7 +67,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="7x7-gS-HDv" firstAttribute="width" secondItem="e6F-lQ-dgT" secondAttribute="width" id="3am-dp-Q7Z"/>
                                     <constraint firstAttribute="trailing" secondItem="7x7-gS-HDv" secondAttribute="trailing" id="PYG-by-c5Y"/>
@@ -117,17 +117,37 @@
                                 </constraints>
                                 <state key="normal" title="play"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhj-om-wl2">
+                                <rect key="frame" x="525" y="28" width="55" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Q2Y-aR-MS7"/>
+                                    <constraint firstAttribute="width" constant="30" id="Wtw-DU-MNx"/>
+                                </constraints>
+                                <state key="normal" image="trashBin"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="693-ae-2ji">
+                                <rect key="frame" x="525" y="113" width="55" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T1M-N5-U3y"/>
+                                    <constraint firstAttribute="width" constant="30" id="qwG-yD-fQH"/>
+                                </constraints>
+                                <state key="normal" image="plusButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pLE-hK-3C4" firstAttribute="top" secondItem="FDk-G5-Qcp" secondAttribute="bottom" constant="20" id="0yQ-H6-2eu"/>
                             <constraint firstItem="FDk-G5-Qcp" firstAttribute="leading" secondItem="fKl-EN-qV5" secondAttribute="leading" constant="20" id="1DA-8f-oyK"/>
                             <constraint firstItem="ehQ-GH-oCr" firstAttribute="top" secondItem="Ij6-uW-6Lc" secondAttribute="bottom" constant="20" id="CiT-6q-IQy"/>
+                            <constraint firstItem="nhj-om-wl2" firstAttribute="top" secondItem="bRf-1C-CvI" secondAttribute="bottom" constant="8" id="HKB-BT-Uvl"/>
                             <constraint firstItem="uBU-8A-Qw4" firstAttribute="top" secondItem="FDk-G5-Qcp" secondAttribute="bottom" id="JyH-5t-h53"/>
                             <constraint firstAttribute="trailing" secondItem="e6F-lQ-dgT" secondAttribute="trailing" constant="20" id="Q1O-ic-Cu8"/>
+                            <constraint firstItem="e6F-lQ-dgT" firstAttribute="top" secondItem="693-ae-2ji" secondAttribute="bottom" constant="16" id="Rqt-rc-Rd6"/>
+                            <constraint firstAttribute="trailing" secondItem="693-ae-2ji" secondAttribute="trailing" constant="20" id="STN-TD-R9l"/>
                             <constraint firstAttribute="trailing" secondItem="Ij6-uW-6Lc" secondAttribute="trailing" constant="20" id="TeE-Nk-qVW"/>
                             <constraint firstItem="e6F-lQ-dgT" firstAttribute="leading" secondItem="fKl-EN-qV5" secondAttribute="leading" constant="20" id="WOG-8j-W6h"/>
                             <constraint firstItem="Vq1-Ae-hSk" firstAttribute="leading" secondItem="fKl-EN-qV5" secondAttribute="leading" constant="20" id="ZE0-CU-CQv"/>
+                            <constraint firstAttribute="trailing" secondItem="nhj-om-wl2" secondAttribute="trailing" constant="20" id="dnN-fL-gVp"/>
                             <constraint firstItem="ART-cJ-X8f" firstAttribute="centerX" secondItem="fKl-EN-qV5" secondAttribute="centerX" constant="57" id="epk-Ff-hyC"/>
                             <constraint firstAttribute="trailing" secondItem="FDk-G5-Qcp" secondAttribute="trailing" constant="20" id="foY-vk-iXK"/>
                             <constraint firstItem="0aS-eH-Typ" firstAttribute="top" secondItem="bRf-1C-CvI" secondAttribute="bottom" constant="18" id="gJy-gR-6TN"/>
@@ -156,8 +176,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="closeButton" width="128" height="128"/>
-        <image name="micButton" width="128" height="128"/>
-        <image name="paperPlane" width="128" height="128"/>
+        <image name="closeButton" width="85" height="85"/>
+        <image name="micButton" width="85" height="85"/>
+        <image name="paperPlane" width="85" height="85"/>
+        <image name="plusButton" width="85" height="85"/>
+        <image name="trashBin" width="85" height="85"/>
     </resources>
 </document>
