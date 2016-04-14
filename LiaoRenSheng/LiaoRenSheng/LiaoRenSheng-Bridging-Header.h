@@ -25,3 +25,5 @@
 #import <Masonry/Masonry.h>
 
 #import <LoopBack/LoopBack.h>
+
+#import <SwipeBack/SwipeBack.h>

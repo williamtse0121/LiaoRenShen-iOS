@@ -9,6 +9,9 @@ pod 'CYLTabBarController'
 pod 'SCSiriWaveformView'
 pod 'SKTagView'
 pod 'Masonry'
+pod 'SwipeBack'
+
+
 
 
 #pod 'CircleProgressView'

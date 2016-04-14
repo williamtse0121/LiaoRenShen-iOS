@@ -27,6 +27,8 @@
 		B656A5681CAB19C100B9A64D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A5671CAB19C100B9A64D /* HomeVC.swift */; };
 		B656A56A1CAB25D100B9A64D /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A5691CAB25D100B9A64D /* BookRepository.swift */; };
 		B66FC3621CB136A80045F4EE /* AddNewVoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */; };
+		B6CE901D1CBEE698003C6749 /* VoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE901C1CBEE698003C6749 /* VoiceVC.swift */; };
+		B6CE901F1CBEE710003C6749 /* VoiceDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE901E1CBEE710003C6749 /* VoiceDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		B656A5671CAB19C100B9A64D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B656A5691CAB25D100B9A64D /* BookRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
 		B66FC3611CB136A80045F4EE /* AddNewVoice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNewVoice.storyboard; sourceTree = "<group>"; };
+		B6CE901C1CBEE698003C6749 /* VoiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceVC.swift; sourceTree = "<group>"; };
+		B6CE901E1CBEE710003C6749 /* VoiceDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceDetailVC.swift; sourceTree = "<group>"; };
 		CE5880C6DCD9433B6B2364A1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -244,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				B63BA1581CA948F700A6777E /* Voice.storyboard */,
+				B6CE901E1CBEE710003C6749 /* VoiceDetailVC.swift */,
+				B6CE901C1CBEE698003C6749 /* VoiceVC.swift */,
 			);
 			path = Voice;
 			sourceTree = "<group>";
@@ -467,7 +473,9 @@
 				B63BA11A1CA9425E00A6777E /* ViewController.swift in Sources */,
 				B607021F1CB7096300B16882 /* CircleProgressView.swift in Sources */,
 				B60702121CB16A2600B16882 /* addVoiceVC.swift in Sources */,
+				B6CE901D1CBEE698003C6749 /* VoiceVC.swift in Sources */,
 				B656A5681CAB19C100B9A64D /* HomeVC.swift in Sources */,
+				B6CE901F1CBEE710003C6749 /* VoiceDetailVC.swift in Sources */,
 				B63BA1181CA9425E00A6777E /* AppDelegate.swift in Sources */,
 				B656A56A1CAB25D100B9A64D /* BookRepository.swift in Sources */,
 				B63BA14D1CA9474E00A6777E /* MainTabBarController.swift in Sources */,
