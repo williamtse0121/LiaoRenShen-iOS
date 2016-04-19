@@ -243,3 +243,20 @@ LiaoRenSheng/Pods/Target Support Files/SCSiriWaveformView/SCSiriWaveformView.xcc
 LiaoRenSheng/Pods/Target Support Files/SKTagView/SKTagView-dummy.m
 LiaoRenSheng/Pods/Target Support Files/SKTagView/SKTagView-prefix.pch
 LiaoRenSheng/Pods/Target Support Files/SKTagView/SKTagView.xcconfig
+LiaoRenSheng/Pods/Headers/Private/SwipeBack/SwipeBack.h
+LiaoRenSheng/Pods/Headers/Private/SwipeBack/UINavigationController+SwipeBack.h
+LiaoRenSheng/Pods/Headers/Private/SwipeBack/UIViewController+SwipeBack.h
+LiaoRenSheng/Pods/Headers/Public/SwipeBack/SwipeBack.h
+LiaoRenSheng/Pods/Headers/Public/SwipeBack/UINavigationController+SwipeBack.h
+LiaoRenSheng/Pods/Headers/Public/SwipeBack/UIViewController+SwipeBack.h
+LiaoRenSheng/Pods/Pods.xcodeproj/xcuserdata/WEI.xcuserdatad/xcschemes/SwipeBack.xcscheme
+LiaoRenSheng/Pods/SwipeBack/LICENSE
+LiaoRenSheng/Pods/SwipeBack/README.md
+LiaoRenSheng/Pods/SwipeBack/SwipeBack/SwipeBack.h
+LiaoRenSheng/Pods/SwipeBack/SwipeBack/UINavigationController+SwipeBack.h
+LiaoRenSheng/Pods/SwipeBack/SwipeBack/UINavigationController+SwipeBack.m
+LiaoRenSheng/Pods/SwipeBack/SwipeBack/UIViewController+SwipeBack.h
+LiaoRenSheng/Pods/SwipeBack/SwipeBack/UIViewController+SwipeBack.m
+LiaoRenSheng/Pods/Target Support Files/SwipeBack/SwipeBack-dummy.m
+LiaoRenSheng/Pods/Target Support Files/SwipeBack/SwipeBack-prefix.pch
+LiaoRenSheng/Pods/Target Support Files/SwipeBack/SwipeBack.xcconfig
